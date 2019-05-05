@@ -1,6 +1,5 @@
 import time
-import Adafruit_ADS1x15
-adc = Adafruit_ADS1x15.ADS1115()
+import adafruit_ads1x15.ads1115 as adc
 
 GAIN = int(input("What will be your gain? (Pick 1, 2, 4, 8, or 16):\n")) # Asks user for the gain.
 rate = int(input("What is the sampling rate that you are using to use? (Pick 8, 16, 32, 64, 128, 250, 475, 860 samples per second):\n")) # Asks user for the sampling rate, in samples per second.
